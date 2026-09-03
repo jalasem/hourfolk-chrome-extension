@@ -1,0 +1,53 @@
+.empty {
+  position: relative;
+  overflow: hidden;
+  padding: var(--space-8) var(--space-5);
+  text-align: center;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--bg-elevated) 68%, transparent);
+}
+
+.empty::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 15%, color-mix(in srgb, var(--accent-soft) 65%, transparent), transparent 38%);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.empty > * {
+  position: relative;
+}
+
+.illustration {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: var(--text-lg);
+  font-weight: 650;
+  letter-spacing: -0.015em;
+  color: var(--fg);
+}
+
+.body {
+  margin-top: 6px;
+  color: var(--fg-muted);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.action {
+  margin-top: var(--space-4);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer {
+  margin-top: var(--space-3);
+}

@@ -1,0 +1,246 @@
+.view {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.command {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.commandRow {
+  position: relative;
+  display: flex;
+  gap: 8px;
+}
+
+.commandIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--accent);
+  pointer-events: none;
+}
+
+.commandInput {
+  min-height: 46px;
+  padding-left: 38px;
+  font-size: var(--text-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.hint {
+  font-size: var(--text-xs);
+  color: var(--fg-muted);
+  line-height: 1.5;
+}
+
+.feedback {
+  font-size: var(--text-xs);
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 16px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.cityField {
+  grid-column: 1 / -1;
+}
+
+.relativeTiming {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 7px 10px;
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--border));
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--accent-soft) 58%, var(--bg-elevated));
+  color: var(--accent-strong);
+  font-size: var(--text-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+.relativeTiming strong {
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.relativeIcon {
+  display: inline-flex;
+}
+
+.relativeLabel {
+  color: var(--fg-secondary);
+  font-weight: 550;
+}
+
+.relativePast {
+  border-color: color-mix(in srgb, var(--danger) 28%, var(--border));
+  background: color-mix(in srgb, var(--danger-soft) 58%, var(--bg-elevated));
+  color: var(--danger);
+}
+
+.linkButton {
+  color: var(--accent-strong);
+  font-size: var(--text-xs);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.dstChoice {
+  margin-top: 8px;
+}
+
+.results {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.resultsHeader {
+  padding: 16px 18px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-sunken);
+}
+
+.resultsTime {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 550;
+  letter-spacing: -0.035em;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.15;
+}
+
+.resultsIn {
+  font-size: var(--text-lg);
+  font-weight: 500;
+  color: var(--fg-secondary);
+  letter-spacing: 0;
+}
+
+.resultsDate {
+  margin-top: 3px;
+  font-size: var(--text-sm);
+  color: var(--fg-muted);
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  min-height: 62px;
+  padding: 12px 16px;
+}
+
+.row + .row {
+  border-top: 1px solid var(--border);
+}
+
+.rowLocal {
+  background: color-mix(in srgb, var(--accent-soft) 45%, transparent);
+}
+
+.rowMain {
+  min-width: 0;
+}
+
+.rowName {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rowLocation {
+  font-size: var(--text-xs);
+  color: var(--fg-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rowTime {
+  text-align: right;
+}
+
+.rowClock {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 550;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.rowMeta {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+  margin-top: 3px;
+  font-size: var(--text-xs);
+  color: var(--fg-muted);
+  white-space: nowrap;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.actions > * {
+  flex: 1 1 auto;
+}
+
+:global(body[data-surface="page"]) .actions {
+  justify-content: flex-end;
+}
+
+:global(body[data-surface="page"]) .actions > * {
+  flex: 0 0 auto;
+}
+
+:global(body[data-surface="popup"]) .controls {
+  padding: 12px;
+  gap: 10px;
+}
+
+@media (max-width: 360px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .cityField {
+    grid-column: auto;
+  }
+
+  .relativeTiming {
+    grid-column: auto;
+  }
+}

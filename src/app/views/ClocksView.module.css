@@ -1,0 +1,230 @@
+.view {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 24px 20px 20px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--duration) var(--ease), box-shadow var(--duration) var(--ease), transform var(--duration) var(--ease);
+}
+
+@media (hover: hover) {
+  .hero:hover {
+    border-color: var(--border-strong);
+    box-shadow: 0 10px 28px color-mix(in srgb, var(--fg) 8%, transparent);
+    transform: translateY(-1px);
+  }
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  right: -84px;
+  top: -108px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+.heroTime {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  color: var(--fg);
+}
+
+.heroClock {
+  font-size: var(--text-hero);
+  font-weight: 550;
+  letter-spacing: -0.045em;
+}
+
+.heroSeconds {
+  font-size: var(--text-xl);
+  font-weight: 500;
+  color: var(--fg-muted);
+  letter-spacing: -0.01em;
+}
+
+.heroPeriod {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--fg-secondary);
+  letter-spacing: 0.02em;
+}
+
+.heroDate {
+  margin-top: 10px;
+  font-size: var(--text-lg);
+  color: var(--fg-secondary);
+}
+
+.heroMeta {
+  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 8px;
+  font-size: var(--text-sm);
+  color: var(--fg-muted);
+}
+
+.heroPlace {
+  font-weight: 600;
+  color: var(--fg-secondary);
+}
+
+.heroDetail::before,
+.heroZone::before {
+  content: "·";
+  margin-right: 8px;
+  color: var(--fg-faint);
+}
+
+.loading {
+  padding: var(--space-6);
+  text-align: center;
+  color: var(--fg-muted);
+  font-size: var(--text-sm);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: visible;
+  box-shadow: var(--shadow-sm);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 10px;
+  min-height: 68px;
+  padding: 13px 8px 13px 16px;
+  transition: background-color var(--duration) var(--ease);
+}
+
+.row:hover {
+  background: var(--bg-hover);
+}
+
+.row + .row {
+  border-top: 1px solid var(--border);
+}
+
+.rowMain {
+  min-width: 0;
+}
+
+.rowName {
+  font-weight: 600;
+  color: var(--fg);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rowLocation {
+  font-size: var(--text-xs);
+  color: var(--fg-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rowTime {
+  text-align: right;
+}
+
+.rowClock {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 550;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+  line-height: 1.2;
+}
+
+.rowMeta {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+  margin-top: 3px;
+  font-size: var(--text-xs);
+  color: var(--fg-muted);
+  white-space: nowrap;
+}
+
+.renameForm {
+  padding-right: 4px;
+}
+
+.addPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.addActions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.addButton {
+  border-style: dashed;
+}
+
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.chip {
+  min-height: 30px;
+  padding: 4px 11px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--bg-elevated);
+  font-size: var(--text-sm);
+  color: var(--fg-secondary);
+  transition: background-color var(--duration) var(--ease), color var(--duration) var(--ease), border-color var(--duration) var(--ease), transform var(--duration) var(--ease);
+}
+
+.chip:hover {
+  background: var(--bg-hover);
+  color: var(--fg);
+  border-color: var(--border-strong);
+  transform: translateY(-1px);
+}
+
+:global(body[data-surface="popup"]) .heroClock {
+  font-size: var(--text-hero-compact);
+}
+
+:global(body[data-surface="page"]) .hero {
+  padding: 30px 28px 26px;
+}
+
+:global(body[data-surface="page"]) .heroClock {
+  font-size: 72px;
+}

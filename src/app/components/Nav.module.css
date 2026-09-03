@@ -1,0 +1,59 @@
+.nav {
+  padding: 0 16px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tabs {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  background: color-mix(in srgb, var(--bg-sunken) 82%, transparent);
+  border: 1px solid color-mix(in srgb, var(--border) 86%, transparent);
+  border-radius: 12px;
+}
+
+.tab {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 34px;
+  padding: 6px 8px;
+  border-radius: 9px;
+  font-size: var(--text-sm);
+  font-weight: 550;
+  color: var(--fg-secondary);
+  transition: background-color var(--duration) var(--ease), color var(--duration) var(--ease), box-shadow var(--duration) var(--ease), transform var(--duration) var(--ease);
+}
+
+.tab svg {
+  transition: color var(--duration) var(--ease), transform var(--duration) var(--ease);
+}
+
+.tab:hover {
+  color: var(--fg);
+  transform: translateY(-1px);
+}
+
+.selected {
+  background: var(--bg-elevated);
+  color: var(--fg);
+  box-shadow: var(--shadow-xs);
+}
+
+.selected svg {
+  color: var(--accent-strong);
+  transform: scale(1.06);
+}
+
+.count {
+  min-width: 18px;
+  padding: 0 5px;
+  border-radius: var(--radius-pill);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  line-height: 18px;
+}

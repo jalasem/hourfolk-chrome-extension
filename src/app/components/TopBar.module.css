@@ -1,0 +1,62 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 52px;
+  padding: 8px 12px 6px 16px;
+  position: relative;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  color: var(--fg);
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+.dot {
+  --status-color: var(--success);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--status-color);
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--status-color) 35%, transparent);
+  animation: statusPulse 3.2s ease-out infinite;
+}
+
+.planning .dot {
+  --status-color: var(--accent);
+}
+
+@keyframes statusPulse {
+  0%, 58%, 100% { box-shadow: 0 0 0 0 transparent; }
+  60% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--status-color) 35%, transparent); }
+  72% { box-shadow: 0 0 0 4px color-mix(in srgb, var(--status-color) 0%, transparent); }
+}
+
+.bar[data-surface="page"] {
+  padding: 18px 20px 8px;
+}
+
+.bar[data-surface="page"] .wordmark {
+  font-size: 21px;
+}

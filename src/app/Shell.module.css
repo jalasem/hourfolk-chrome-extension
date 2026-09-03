@@ -1,0 +1,67 @@
+.shell {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: var(--bg);
+  background-image: radial-gradient(circle at 50% -20%, color-mix(in srgb, var(--accent-soft) 50%, transparent), transparent 42%);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+}
+
+.main {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--space-4);
+  padding-bottom: var(--space-8);
+  scrollbar-gutter: stable;
+}
+
+.main > section {
+  animation: surfaceIn 280ms var(--ease) both;
+}
+
+@keyframes surfaceIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.shell[data-surface="page"] .column {
+  max-width: 800px;
+  padding-inline: var(--space-6);
+}
+
+.shell[data-surface="page"] .main {
+  padding: var(--space-6) var(--space-5) var(--space-10);
+}
+
+.shell[data-surface="sidepanel"] .main {
+  padding-inline: var(--space-4);
+}
+
+:global(body[data-surface="popup"]) .shell {
+  height: 600px;
+}
+
+@media (max-width: 520px) {
+  .main {
+    padding: 14px;
+  }
+
+  .shell[data-surface="page"] .column {
+    padding-inline: 0;
+  }
+}

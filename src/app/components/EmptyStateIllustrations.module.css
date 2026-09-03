@@ -1,0 +1,128 @@
+.frame {
+  width: 132px;
+  height: 98px;
+  margin: -8px auto 4px;
+  filter: drop-shadow(0 14px 18px color-mix(in srgb, var(--fg) 10%, transparent));
+  animation: hover 6s ease-in-out infinite;
+}
+
+.art {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.orbitBack,
+.orbitFront,
+.reminderHalo,
+.reminderArc,
+.reminderArcMuted {
+  stroke-width: 1.5;
+}
+
+.orbitBack,
+.reminderHalo {
+  stroke: var(--border-strong);
+  stroke-dasharray: 3 5;
+}
+
+.orbitFront {
+  stroke: color-mix(in srgb, var(--accent) 44%, var(--border));
+  stroke-dasharray: 2 6;
+}
+
+.satellite {
+  fill: var(--bg-elevated);
+  stroke: var(--border-strong);
+}
+
+.satelliteHand {
+  stroke: var(--fg-secondary);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.satelliteCoral,
+.alertDot {
+  fill: var(--accent);
+  stroke: color-mix(in srgb, var(--accent-strong) 70%, var(--border));
+}
+
+.clockShadow,
+.bellShadow,
+.alertDotShadow {
+  fill: color-mix(in srgb, var(--fg) 12%, transparent);
+}
+
+.clockFace {
+  stroke: color-mix(in srgb, var(--border-strong) 82%, transparent);
+}
+
+.clockRim {
+  stroke: color-mix(in srgb, var(--fg-secondary) 30%, transparent);
+}
+
+.faceStart {
+  stop-color: var(--bg-elevated);
+}
+
+.faceEnd {
+  stop-color: var(--bg-active);
+}
+
+.tick,
+.hands {
+  stroke: var(--fg);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hands {
+  stroke-width: 3;
+}
+
+.pin {
+  fill: var(--accent);
+}
+
+.reminderArc {
+  stroke: var(--accent);
+  stroke-linecap: round;
+}
+
+.reminderArcMuted {
+  stroke: var(--border-strong);
+  stroke-dasharray: 4 5;
+}
+
+.bell {
+  fill: var(--fg);
+  stroke: var(--fg);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.bellClapper {
+  stroke: var(--accent);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.bellShine {
+  stroke: var(--bg-elevated);
+  stroke-width: 2;
+  stroke-linecap: round;
+  opacity: 0.45;
+}
+
+@keyframes hover {
+  0%, 100% { transform: translateY(0) rotate(-0.5deg); }
+  50% { transform: translateY(-4px) rotate(0.5deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .frame { animation: none; }
+}

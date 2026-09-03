@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151114"/>
+      <stop offset="1" stop-color="#211a18"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.25" cy="0.2" r="0.85">
+      <stop offset="0" stop-color="#ff7967" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ff7967" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="440" height="280" rx="0" fill="url(#bg)"/>
+  <rect width="440" height="280" fill="url(#glow)"/>
+  <circle cx="360" cy="54" r="88" fill="none" stroke="#ff7967" stroke-opacity="0.08"/>
+  <circle cx="360" cy="54" r="54" fill="none" stroke="#ff7967" stroke-opacity="0.12"/>
+  <g transform="translate(42 76)">
+    <rect width="104" height="104" rx="27" fill="#24201d"/>
+    <circle cx="52" cy="52" r="34" fill="none" stroke="#f8f5ef" stroke-width="5.5"/>
+    <path d="M52 52V28M52 52l19 10" stroke="#f8f5ef" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M52 52l19 10" stroke="#ff7967" stroke-width="5.5" stroke-linecap="round"/>
+    <circle cx="81" cy="23" r="8" fill="#ff7967"/>
+  </g>
+  <text x="170" y="122" fill="#f8f5ef" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="38" font-weight="700" letter-spacing="-1.2">Hourfolk</text>
+  <text x="172" y="154" fill="#b9b2b0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15">Time zones, made human.</text>
+  <g transform="translate(172 178)" fill="#ff9a8b" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="600">
+    <text x="0" y="0">CLOCKS</text>
+    <circle cx="64" cy="-4" r="2"/>
+    <text x="76" y="0">PLAN</text>
+    <circle cx="118" cy="-4" r="2"/>
+    <text x="130" y="0">REMIND</text>
+  </g>
+</svg>

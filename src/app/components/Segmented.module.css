@@ -1,0 +1,37 @@
+.group {
+  display: inline-flex;
+  padding: 3px;
+  gap: 2px;
+  background: var(--bg-sunken);
+  border: 1px solid var(--border);
+  border-radius: 11px;
+}
+
+.item {
+  border-radius: 8px;
+  color: var(--fg-secondary);
+  font-weight: 500;
+  transition: background-color var(--duration) var(--ease), color var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
+}
+
+.md .item {
+  min-height: 30px;
+  padding: 5px 12px;
+  font-size: var(--text-sm);
+}
+
+.sm .item {
+  min-height: 26px;
+  padding: 3px 9px;
+  font-size: var(--text-xs);
+}
+
+.item:hover {
+  color: var(--fg);
+}
+
+.selected {
+  background: var(--bg-elevated);
+  color: var(--fg);
+  box-shadow: var(--shadow-xs);
+}

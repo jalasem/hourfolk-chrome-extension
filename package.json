@@ -1,0 +1,42 @@
+{
+  "name": "hourfolk",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Your hours, wherever work happens. A world clock, time-zone planner, and reminder extension for Chrome.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit -p tsconfig.json && vite build",
+    "build:newtab": "HOURFOLK_NEWTAB=1 vite build --outDir dist-newtab",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.node.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "icons": "node scripts/make-icons.mjs",
+    "store:assets": "node scripts/make-store-promo.mjs",
+    "package:store": "npm run build && node scripts/package-store.mjs"
+  },
+  "dependencies": {
+    "@js-temporal/polyfill": "^0.5.1",
+    "@vvo/tzdb": "^6.198.0",
+    "city-timezones": "^1.3.4",
+    "countries-and-timezones": "^3.10.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.7.1",
+    "@playwright/test": "^1.62.1",
+    "@types/chrome": "^0.2.8",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "typescript": "^5.9.3",
+    "vite": "^8.2.2",
+    "vitest": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,38 @@
+.notice {
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-xs);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--fg-secondary);
+}
+
+.title {
+  font-weight: 600;
+  color: var(--fg);
+  margin-bottom: 2px;
+}
+
+.body :global(p + p) {
+  margin-top: 6px;
+}
+
+.warning {
+  background: var(--warning-soft);
+  border-color: transparent;
+  color: var(--fg);
+}
+
+.danger {
+  background: var(--danger-soft);
+  border-color: transparent;
+  color: var(--fg);
+}
+
+.success {
+  background: var(--success-soft);
+  border-color: transparent;
+  color: var(--fg);
+}
