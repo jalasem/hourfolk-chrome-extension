@@ -3,44 +3,195 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Legal and support information for the Hourfolk Chrome extension." />
-    <title>Hourfolk — Legal & Support</title>
+    <meta name="theme-color" content="#f7f2ed" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121112" media="(prefers-color-scheme: dark)" />
+    <meta name="description" content="Hourfolk is a private, local-first world clock, time-zone planner, and reminder extension for Chrome." />
+    <meta property="og:title" content="Hourfolk — Your hours, wherever work happens" />
+    <meta property="og:description" content="World clocks, natural-language planning, and dependable reminders—without an account or tracking." />
+    <meta property="og:image" content="https://hourfolk-chrome-extension.vercel.app/assets/social-preview.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hourfolk-chrome-extension.vercel.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Hourfolk — Time zones, made human</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <main class="shell">
-      <header class="topbar">
-        <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>Hourfolk</a>
-        <nav aria-label="Legal pages">
-          <a href="privacy-policy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-        </nav>
-      </header>
+  <body class="home-page">
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
 
-      <section aria-labelledby="page-title">
-        <div class="eyebrow">Legal & support</div>
-        <h1 id="page-title">Time-zone planning, with your data kept close.</h1>
-        <p class="lede">Hourfolk is a private-by-design world clock, planner, and reminder extension. It works without an account, advertising, analytics, or a backend.</p>
+    <header class="site-header">
+      <a class="brand brand-large" href="./" aria-label="Hourfolk home">
+        <span class="brand-face" aria-hidden="true"><span></span><i></i></span>
+        <span>Hourfolk</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#questions">FAQ</a>
+      </nav>
+      <a class="nav-action" href="https://youtu.be/8ZpMvoMOPVA">Watch demo <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="status-pill"><span aria-hidden="true"></span> Built for Chrome</div>
+          <h1 id="hero-title">Time zones,<br /><em>made human.</em></h1>
+          <p>Know when your people are awake. Plan across cities in plain language. Set reminders around the moments that matter.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#demo">See Hourfolk in action <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="https://github.com/jalasem/hourfolk-chrome-extension">View on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-notes" aria-label="Product highlights">
+            <span><b aria-hidden="true">✓</b> No account</span>
+            <span><b aria-hidden="true">✓</b> No tracking</span>
+            <span><b aria-hidden="true">✓</b> Free to use</span>
+          </div>
+        </div>
+
+        <div class="hero-product" aria-label="Hourfolk world clocks preview">
+          <div class="product-glow" aria-hidden="true"></div>
+          <div class="browser-frame">
+            <div class="browser-bar" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <div class="browser-address">Hourfolk</div>
+              <div class="browser-menu">•••</div>
+            </div>
+            <picture><source media="(prefers-color-scheme: dark)" srcset="assets/clocks-dark.png" /><img src="assets/clocks-light.png" alt="Hourfolk showing local time in Muscat alongside London, New York, and Tokyo" width="1280" height="800" /></picture>
+          </div>
+          <div class="floating-time floating-time-one" aria-hidden="true"><span>London</span><strong>12:34 PM</strong><small>3 hours behind</small></div>
+          <div class="floating-time floating-time-two" aria-hidden="true"><span>Tokyo</span><strong>8:34 PM</strong><small>5 hours ahead</small></div>
+        </div>
       </section>
 
-      <section class="cards" aria-label="Legal documents">
-        <a class="card" href="privacy-policy.html">
-          <span class="card-icon" aria-hidden="true">◌</span>
-          <h2>Privacy Policy</h2>
-          <p>What Hourfolk stores locally, the Chrome permissions it uses, and how you stay in control.</p>
-        </a>
-        <a class="card" href="terms.html">
-          <span class="card-icon" aria-hidden="true">✓</span>
-          <h2>Terms & Conditions</h2>
-          <p>The straightforward terms that apply when you install and use Hourfolk.</p>
-        </a>
+      <section class="proof-strip" aria-label="Hourfolk principles">
+        <p>One calm place for every clock that matters.</p>
+        <div>
+          <span>Local-first</span><span>Private by design</span><span>Light &amp; dark</span><span>Popup · Side panel · Full page</span>
+        </div>
       </section>
 
-      <footer>
-        <span>© 2026 Hourfolk</span>
-        <a href="https://github.com/jalasem/hourfolk-chrome-extension/issues">Support & feedback</a>
-      </footer>
+      <section class="story" id="features" aria-labelledby="features-title">
+        <div class="section-intro">
+          <div class="eyebrow">Built around real work</div>
+          <h2 id="features-title">Less calculating.<br />More connecting.</h2>
+          <p>Hourfolk turns time-zone math into a glance, a sentence, or a quiet notification.</p>
+        </div>
+
+        <div class="bento-grid">
+          <article class="feature-card feature-clocks">
+            <div class="feature-copy"><span class="feature-number">01</span><div><h3>See your world at a glance</h3><p>Save the cities you care about and instantly understand what time it is there—and how far ahead or behind they are.</p></div></div>
+            <div class="mini-clock-stack" aria-hidden="true">
+              <div><span class="sun-icon">☼</span><p><strong>London</strong><small>3 hours behind</small></p><b>12:34 PM</b></div>
+              <div><span class="sun-icon">☼</span><p><strong>New York</strong><small>8 hours behind</small></p><b>7:34 AM</b></div>
+              <div><span class="moon-icon">☾</span><p><strong>Tokyo</strong><small>5 hours ahead</small></p><b>8:34 PM</b></div>
+            </div>
+          </article>
+
+          <article class="feature-card feature-plan">
+            <span class="feature-number">02</span><h3>Plan the way you speak</h3>
+            <p>Type “2:15pm in Chicago.” Hourfolk understands the city, resolves the next occurrence, and shows how far away it is.</p>
+            <div class="natural-input" aria-hidden="true"><span>✳</span><strong>2:15pm in Chicago</strong><i>Plan</i></div>
+            <div class="time-answer" aria-hidden="true"><span>For you in Muscat</span><strong>11:15 PM</strong><small>in 7 hours 41 minutes</small></div>
+          </article>
+
+          <article class="feature-card feature-reminders">
+            <span class="feature-number">03</span><h3>Arrive before the moment</h3>
+            <p>Layer 30, 15, 10, or 5-minute early alerts on top of the always-on at-time alarm. Keep sound on—or mute it globally.</p>
+            <div class="alert-row" aria-hidden="true"><b>At time <small>Included</small></b><span>30m</span><span class="selected">✓ 15m</span><span>10m</span><span class="selected">✓ 5m</span></div>
+          </article>
+
+          <article class="feature-card feature-surfaces">
+            <span class="feature-number">04</span><h3>There when you need it</h3>
+            <p>Open Hourfolk as a quick popup, keep it beside your browser, or give it a full page. Your workspace follows you.</p>
+            <div class="surface-switcher" aria-hidden="true"><span>Popup</span><span class="active">Side panel</span><span>Full page</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="showcase" id="demo" aria-labelledby="showcase-title">
+        <div class="showcase-heading">
+          <div><div class="eyebrow">A clearer way to work</div><h2 id="showcase-title">Three jobs.<br />One thoughtful rhythm.</h2></div>
+          <div class="showcase-tabs" role="tablist" aria-label="Product screenshots">
+            <button id="tab-clocks" type="button" role="tab" aria-selected="true" aria-controls="showcase-panel" data-image="assets/clocks-light.png" data-image-dark="assets/clocks-dark.png" data-alt="Hourfolk world clocks view">Clocks</button>
+            <button id="tab-plan" type="button" role="tab" aria-selected="false" aria-controls="showcase-panel" data-image="assets/plan-light.png" data-alt="Hourfolk time-zone planner view">Plan</button>
+            <button id="tab-reminders" type="button" role="tab" aria-selected="false" aria-controls="showcase-panel" data-image="assets/reminders-light.png" data-image-dark="assets/reminders-dark.png" data-alt="Hourfolk reminder composer view">Reminders</button>
+          </div>
+        </div>
+        <div class="showcase-frame" id="showcase-panel" role="tabpanel" aria-labelledby="tab-clocks"><img id="showcase-image" src="assets/clocks-light.png" alt="Hourfolk world clocks view" width="1280" height="800" /></div>
+      </section>
+
+      <section class="privacy-section" id="privacy" aria-labelledby="privacy-title">
+        <div class="privacy-orbit" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="privacy-core"><span>⌁</span><strong>Your time</strong><small>stays yours</small></div>
+          <span class="orbit-label orbit-label-one">No account</span><span class="orbit-label orbit-label-two">No analytics</span><span class="orbit-label orbit-label-three">No ads</span>
+        </div>
+        <div class="privacy-copy">
+          <div class="eyebrow">Private by default</div><h2 id="privacy-title">Useful to you.<br />Invisible to us.</h2>
+          <p>Your cities, plans, reminders, and preferences stay in Chrome’s local extension storage. Hourfolk has no account system, analytics SDK, advertising, or backend.</p>
+          <a class="text-link" href="privacy-policy.html">Read the plain-language privacy policy <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="video-section" aria-labelledby="video-title">
+        <div class="video-card"><a class="video-link" href="https://youtu.be/8ZpMvoMOPVA" aria-label="Watch the 29-second Hourfolk demo on YouTube"><img src="assets/reminders-dark.png" alt="Hourfolk reminder composer in dark mode" width="1280" height="800" /><span class="play-button" aria-hidden="true">▶</span><span class="video-duration">0:29</span></a></div>
+        <div class="video-copy"><div class="eyebrow">See it in motion</div><h2 id="video-title">Meet Hourfolk in 29 seconds.</h2><p>A quick tour of world clocks, plain-language planning, and reminders that work across time zones.</p><a class="button button-secondary" href="https://youtu.be/8ZpMvoMOPVA">Watch on YouTube <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="faq" id="questions" aria-labelledby="faq-title">
+        <div class="section-intro faq-intro"><div class="eyebrow">Good to know</div><h2 id="faq-title">Questions, answered.</h2></div>
+        <div class="faq-list">
+          <details open><summary>Does Hourfolk need an account?<span aria-hidden="true">+</span></summary><p>No. Install it and start using it. Your cities, reminders, and preferences stay in Chrome’s local extension storage.</p></details>
+          <details><summary>Will reminders work if Chrome is closed?<span aria-hidden="true">+</span></summary><p>Chrome must be running for a notification to appear. If your device is asleep, the alert appears after it wakes. Hourfolk explains this clearly when you create a reminder.</p></details>
+          <details><summary>Can I set more than one early alert?<span aria-hidden="true">+</span></summary><p>Yes. Choose any combination of 30, 15, 10, and 5-minute early alerts. The at-time alarm always remains included.</p></details>
+          <details><summary>Does it support dark mode?<span aria-hidden="true">+</span></summary><p>Yes. Hourfolk includes light, dark, and system-matched themes across its popup, side panel, and full-page view.</p></details>
+        </div>
+      </section>
+
+      <section class="closing-card">
+        <span class="closing-kicker">Your hours, wherever work happens.</span><h2>Make every time zone<br />feel a little closer.</h2><p>Hourfolk is free, private, and built for Chrome.</p>
+        <div class="hero-actions closing-actions"><a class="button button-primary" href="https://youtu.be/8ZpMvoMOPVA">Watch the demo <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="https://github.com/jalasem/hourfolk-chrome-extension">Explore the source <span aria-hidden="true">↗</span></a></div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div><a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>Hourfolk</a><p>Time, in good company.</p></div>
+      <nav aria-label="Footer navigation"><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://github.com/jalasem/hourfolk-chrome-extension/issues">Support</a><a href="https://github.com/jalasem/hourfolk-chrome-extension">GitHub</a></nav>
+      <span>© 2026 Hourfolk</span>
+    </footer>
+
+    <script>
+      const tabs = [...document.querySelectorAll('[data-image]')];
+      const image = document.querySelector('#showcase-image');
+      const darkTheme = window.matchMedia('(prefers-color-scheme: dark)');
+      const sourceFor = (tab) => darkTheme.matches && tab.dataset.imageDark ? tab.dataset.imageDark : tab.dataset.image;
+      image.src = sourceFor(tabs[0]);
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => {
+          tabs.forEach((item) => item.setAttribute('aria-selected', 'false'));
+          tab.setAttribute('aria-selected', 'true');
+          document.querySelector('#showcase-panel').setAttribute('aria-labelledby', tab.id);
+          image.classList.add('is-changing');
+          window.setTimeout(() => {
+            image.src = sourceFor(tab);
+            image.alt = tab.dataset.alt;
+            image.classList.remove('is-changing');
+          }, 120);
+        });
+        tab.addEventListener('keydown', (event) => {
+          if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+          event.preventDefault();
+          const direction = event.key === 'ArrowRight' ? 1 : -1;
+          const next = tabs[(index + direction + tabs.length) % tabs.length];
+          next.focus(); next.click();
+        });
+      });
+      darkTheme.addEventListener('change', () => {
+        const active = tabs.find((tab) => tab.getAttribute('aria-selected') === 'true');
+        image.src = sourceFor(active);
+      });
+    </script>
   </body>
 </html>
