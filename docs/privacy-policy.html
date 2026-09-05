@@ -6,51 +6,73 @@
     <meta name="description" content="Hourfolk Privacy Policy." />
     <title>Privacy Policy — Hourfolk</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#f7f6ef" />
+    <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="site.js" defer></script>
   </head>
-  <body>
-    <main class="shell">
-      <header class="topbar">
-        <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>Hourfolk</a>
-        <nav aria-label="Legal pages">
-          <a href="privacy-policy.html" aria-current="page">Privacy</a>
-          <a href="terms.html">Terms</a>
-        </nav>
-      </header>
-
-      <article class="legal">
-        <div class="eyebrow">Legal</div>
+  <body class="legal-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="announcement">A little less time-zone math. A little more time together. <a href="./#product">Meet Hourfolk <span aria-hidden="true">↗</span></a></div>
+  <header class="header wrap">
+    <a class="brand" href="./" aria-label="Hourfolk home"><img src="assets/icon.png" alt="" width="36" height="36" />Hourfolk</a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="./#product">How it works</a><a href="./#for-you">Made for you</a><a href="./#privacy">Our promise</a></nav>
+    <a class="button small dark" href="./">Explore Hourfolk <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav id="mobile-nav" aria-label="Mobile navigation" hidden><a href="./#product">How it works</a><a href="./#for-you">Made for you</a><a href="./#privacy">Our promise</a><a href="./#questions">FAQs</a></nav>
+  </header>
+    <main id="main" class="wrap">
+      <div class="legal-heading">
+        <a class="back-link" href="./"><span aria-hidden="true">←</span> Back to Hourfolk</a>
+        <p class="eyebrow">Your time is personal.</p>
         <h1>Privacy Policy</h1>
         <p class="effective">Effective September 3, 2026</p>
-
+      </div>
+      <div class="legal-layout">
+        <aside class="legal-sidebar">
+          <nav class="legal-navigation" aria-label="Legal documents">
+            <a href="privacy-policy.html" aria-current="page">Privacy Policy <span aria-hidden="true">↗</span></a>
+            <a href="terms.html">Terms & Conditions <span aria-hidden="true">↗</span></a>
+          </nav>
+          <nav class="contents" aria-label="On this page">
+            <p class="eyebrow">On this page</p>
+            <a href="#information-stored-on-your-device">Information stored on your device</a>
+            <a href="#chrome-permissions">Chrome permissions</a>
+            <a href="#data-sharing-and-remote-services">Data sharing and remote services</a>
+            <a href="#retention-and-deletion">Retention and deletion</a>
+            <a href="#children-s-privacy">Children’s privacy</a>
+            <a href="#changes-to-this-policy">Changes to this policy</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <div class="legal-help"><p>A question about Hourfolk?</p><a href="https://github.com/jalasem/hourfolk-chrome-extension/issues">Get in touch <span aria-hidden="true">↗</span></a></div>
+        </aside>
+        <article class="legal-copy" aria-label="Privacy Policy">
         <p>Hourfolk is designed to work without accounts, analytics, advertising, or a backend service. The extension does not collect, transmit, sell, or share personal information.</p>
 
-        <h2>Information stored on your device</h2>
+        <h2 id="information-stored-on-your-device">Information stored on your device</h2>
         <p>Hourfolk stores saved cities, display preferences, planner state, reminder titles and schedules, and unfinished reminder drafts in Chrome’s local extension storage. This information remains on your device and is used only to provide the features you request.</p>
 
-        <h2>Chrome permissions</h2>
+        <h2 id="chrome-permissions">Chrome permissions</h2>
         <p>Hourfolk uses Chrome’s <strong>storage</strong> permission to preserve local state, <strong>alarms</strong> to schedule reminders, <strong>notifications</strong> to display them, and <strong>sidePanel</strong> to provide the optional side-panel interface. It requests no access to websites, browsing history, tabs, or page content.</p>
 
-        <h2>Data sharing and remote services</h2>
+        <h2 id="data-sharing-and-remote-services">Data sharing and remote services</h2>
         <p>Hourfolk does not send extension data to the developer or third parties. It contains no analytics SDKs, advertising SDKs, remote executable code, or external data services.</p>
 
-        <h2>Retention and deletion</h2>
+        <h2 id="retention-and-deletion">Retention and deletion</h2>
         <p>You can delete saved cities and reminders inside Hourfolk. Uninstalling the extension removes its locally stored extension data according to Chrome’s normal uninstall behavior.</p>
 
-        <h2>Children’s privacy</h2>
+        <h2 id="children-s-privacy">Children’s privacy</h2>
         <p>Hourfolk does not knowingly collect personal information from anyone, including children.</p>
 
-        <h2>Changes to this policy</h2>
+        <h2 id="changes-to-this-policy">Changes to this policy</h2>
         <p>If Hourfolk’s data practices change, this policy and the extension’s store disclosures will be updated before the changed behavior is released. The effective date above will also be revised.</p>
 
-        <h2>Contact</h2>
+        <h2 id="contact">Contact</h2>
         <p>For privacy questions, support, or data-practice concerns, <a href="https://github.com/jalasem/hourfolk-chrome-extension/issues">open a support request on GitHub</a>.</p>
-      </article>
-
-      <footer>
-        <span>© 2026 Hourfolk</span>
-        <a href="terms.html">Terms & Conditions</a>
-      </footer>
+        </article>
+      </div>
+      <div class="legal-next"><p>Time, in good company.</p><a class="underlined" href="terms.html">Read our Terms & Conditions <span aria-hidden="true">↗</span></a></div>
     </main>
+  <footer class="footer wrap"><div class="footer-top"><a class="brand" href="./"><img src="assets/icon.png" alt="" width="36" height="36" />Hourfolk</a><nav aria-label="Footer"><a href="privacy-policy.html">Privacy policy</a><a href="terms.html">Terms</a><a href="https://github.com/jalasem/hourfolk-chrome-extension/issues">Support ↗</a><a href="https://github.com/jalasem/hourfolk-chrome-extension">GitHub ↗</a></nav></div><div class="footer-bottom"><span>© 2026 Hourfolk</span><span>Your hours, wherever life happens.</span><a href="#main">Back to top ↑</a></div></footer>
   </body>
 </html>

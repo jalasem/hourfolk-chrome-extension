@@ -6,61 +6,86 @@
     <meta name="description" content="Hourfolk Terms and Conditions." />
     <title>Terms & Conditions — Hourfolk</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#f7f6ef" />
+    <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="site.js" defer></script>
   </head>
-  <body>
-    <main class="shell">
-      <header class="topbar">
-        <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>Hourfolk</a>
-        <nav aria-label="Legal pages">
-          <a href="privacy-policy.html">Privacy</a>
-          <a href="terms.html" aria-current="page">Terms</a>
-        </nav>
-      </header>
-
-      <article class="legal">
-        <div class="eyebrow">Legal</div>
+  <body class="legal-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="announcement">A little less time-zone math. A little more time together. <a href="./#product">Meet Hourfolk <span aria-hidden="true">↗</span></a></div>
+  <header class="header wrap">
+    <a class="brand" href="./" aria-label="Hourfolk home"><img src="assets/icon.png" alt="" width="36" height="36" />Hourfolk</a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="./#product">How it works</a><a href="./#for-you">Made for you</a><a href="./#privacy">Our promise</a></nav>
+    <a class="button small dark" href="./">Explore Hourfolk <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav id="mobile-nav" aria-label="Mobile navigation" hidden><a href="./#product">How it works</a><a href="./#for-you">Made for you</a><a href="./#privacy">Our promise</a><a href="./#questions">FAQs</a></nav>
+  </header>
+    <main id="main" class="wrap">
+      <div class="legal-heading">
+        <a class="back-link" href="./"><span aria-hidden="true">←</span> Back to Hourfolk</a>
+        <p class="eyebrow">The details, made clear.</p>
         <h1>Terms & Conditions</h1>
         <p class="effective">Effective September 3, 2026</p>
-
+      </div>
+      <div class="legal-layout">
+        <aside class="legal-sidebar">
+          <nav class="legal-navigation" aria-label="Legal documents">
+            <a href="privacy-policy.html">Privacy Policy <span aria-hidden="true">↗</span></a>
+            <a href="terms.html" aria-current="page">Terms & Conditions <span aria-hidden="true">↗</span></a>
+          </nav>
+          <nav class="contents" aria-label="On this page">
+            <p class="eyebrow">On this page</p>
+            <a href="#what-hourfolk-provides">What Hourfolk provides</a>
+            <a href="#reminder-limitations">Reminder limitations</a>
+            <a href="#your-responsibilities">Your responsibilities</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#ownership">Ownership</a>
+            <a href="#availability-and-updates">Availability and updates</a>
+            <a href="#disclaimer-and-limitation-of-liability">Disclaimer and limitation of liability</a>
+            <a href="#ending-use">Ending use</a>
+            <a href="#changes-to-these-terms">Changes to these terms</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <div class="legal-help"><p>A question about Hourfolk?</p><a href="https://github.com/jalasem/hourfolk-chrome-extension/issues">Get in touch <span aria-hidden="true">↗</span></a></div>
+        </aside>
+        <article class="legal-copy" aria-label="Terms & Conditions">
         <p>These terms govern your use of the Hourfolk Chrome extension. By installing or using Hourfolk, you agree to these terms. If you do not agree, do not install or use the extension.</p>
 
-        <h2>What Hourfolk provides</h2>
+        <h2 id="what-hourfolk-provides">What Hourfolk provides</h2>
         <p>Hourfolk provides world-clock, time-zone planning, and local reminder tools. The extension is provided for personal and professional planning convenience. No account or payment is required.</p>
 
-        <h2>Reminder limitations</h2>
+        <h2 id="reminder-limitations">Reminder limitations</h2>
         <p>Hourfolk reminders rely on Chrome’s alarms and notifications. Chrome must be running for an alert to be delivered. If your device is asleep or Chrome is closed at the scheduled time, an alert may arrive late or after Chrome restarts. Delivery time can also be affected by browser, operating-system, notification, battery, and device settings.</p>
         <p><strong>Do not rely on Hourfolk for emergencies, safety-critical events, medical treatment, financial deadlines, or any situation where a missed or delayed alert could cause harm or loss.</strong></p>
 
-        <h2>Your responsibilities</h2>
+        <h2 id="your-responsibilities">Your responsibilities</h2>
         <p>You are responsible for checking the city, date, time zone, converted local time, and notification settings before saving a reminder. You agree not to misuse the extension, interfere with its operation, or use it in violation of applicable law.</p>
 
-        <h2>Privacy</h2>
+        <h2 id="privacy">Privacy</h2>
         <p>Your use of Hourfolk is also governed by the <a href="privacy-policy.html">Privacy Policy</a>. Hourfolk stores its working data locally in Chrome and does not transmit it to the developer.</p>
 
-        <h2>Ownership</h2>
+        <h2 id="ownership">Ownership</h2>
         <p>Hourfolk and its original interface, branding, and software are protected by applicable intellectual-property laws. These terms give you a limited, revocable, non-exclusive right to install and use the extension; they do not transfer ownership.</p>
 
-        <h2>Availability and updates</h2>
+        <h2 id="availability-and-updates">Availability and updates</h2>
         <p>Features may be changed, updated, suspended, or discontinued. Reasonable care is taken to keep Hourfolk accurate and functional, but uninterrupted or error-free operation is not guaranteed.</p>
 
-        <h2>Disclaimer and limitation of liability</h2>
+        <h2 id="disclaimer-and-limitation-of-liability">Disclaimer and limitation of liability</h2>
         <p>To the fullest extent permitted by law, Hourfolk is provided “as is” and “as available,” without warranties of any kind. The developer is not liable for indirect, incidental, special, consequential, or punitive damages, or for losses caused by inaccurate time-zone data, missed or delayed reminders, device settings, browser behavior, or inability to use the extension. Nothing in these terms excludes rights or liability that cannot legally be excluded.</p>
 
-        <h2>Ending use</h2>
+        <h2 id="ending-use">Ending use</h2>
         <p>You may stop using Hourfolk at any time by uninstalling it. The right to use Hourfolk may be withdrawn if you materially violate these terms.</p>
 
-        <h2>Changes to these terms</h2>
+        <h2 id="changes-to-these-terms">Changes to these terms</h2>
         <p>These terms may be updated as Hourfolk evolves. Material changes will be published on this page with a revised effective date. Continued use after an update means you accept the revised terms.</p>
 
-        <h2>Contact</h2>
+        <h2 id="contact">Contact</h2>
         <p>For questions about these terms or the extension, <a href="https://github.com/jalasem/hourfolk-chrome-extension/issues">open a support request on GitHub</a>.</p>
-      </article>
-
-      <footer>
-        <span>© 2026 Hourfolk</span>
-        <a href="privacy-policy.html">Privacy Policy</a>
-      </footer>
+        </article>
+      </div>
+      <div class="legal-next"><p>Time, in good company.</p><a class="underlined" href="privacy-policy.html">Read our Privacy Policy <span aria-hidden="true">↗</span></a></div>
     </main>
+  <footer class="footer wrap"><div class="footer-top"><a class="brand" href="./"><img src="assets/icon.png" alt="" width="36" height="36" />Hourfolk</a><nav aria-label="Footer"><a href="privacy-policy.html">Privacy policy</a><a href="terms.html">Terms</a><a href="https://github.com/jalasem/hourfolk-chrome-extension/issues">Support ↗</a><a href="https://github.com/jalasem/hourfolk-chrome-extension">GitHub ↗</a></nav></div><div class="footer-bottom"><span>© 2026 Hourfolk</span><span>Your hours, wherever life happens.</span><a href="#main">Back to top ↑</a></div></footer>
   </body>
 </html>
