@@ -74,7 +74,7 @@ Reminder notifications use Chrome’s alarms API. A reviewer can create a remind
 
 ## URLs to provide in the dashboard
 
-- Privacy policy: `https://jalasem.github.io/hourfolk-chrome-extension/privacy-policy.html`
-- Terms and conditions: `https://jalasem.github.io/hourfolk-chrome-extension/terms.html`
+- Privacy policy: `https://hourfolk.abdulsamii.com/privacy-policy.html`
+- Terms and conditions: `https://hourfolk.abdulsamii.com/terms.html`
 - Support URL: `https://github.com/jalasem/hourfolk-chrome-extension/issues`
-- Homepage URL: `https://jalasem.github.io/hourfolk-chrome-extension/`
+- Homepage URL: `https://hourfolk.abdulsamii.com/`

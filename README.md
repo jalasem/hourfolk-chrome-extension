@@ -75,9 +75,17 @@ It pins the local zone to `Asia/Muscat` so expectations are deterministic.
 ## Chrome Web Store submission
 
 The repository includes an upload-ready packaging command, prepared listing copy, privacy answers,
-a public [privacy policy](https://jalasem.github.io/hourfolk-chrome-extension/privacy-policy.html),
-[terms and conditions](https://jalasem.github.io/hourfolk-chrome-extension/terms.html), and correctly sized graphic assets. See
+a public [privacy policy](https://hourfolk.abdulsamii.com/privacy-policy.html),
+[terms and conditions](https://hourfolk.abdulsamii.com/terms.html), and correctly sized graphic assets. See
 [`store-listing/SUBMISSION_GUIDE.md`](store-listing/SUBMISSION_GUIDE.md) for the exact dashboard flow.
+
+## Public website hosting
+
+The marketing website is published at [hourfolk.abdulsamii.com](https://hourfolk.abdulsamii.com/).
+Its static source is in `docs/`, deployed to the Vercel project `hourfolk-chrome-extension`.
+Cloudflare manages the `hourfolk` CNAME in the `abdulsamii.com` zone, pointing to
+`98f9ec1cb2cd8d22.vercel-dns-017.com` with proxying disabled (DNS only); Vercel manages HTTPS.
+The existing `hourfolk-chrome-extension.vercel.app` address remains available for published links.
 
 ## Architecture
 

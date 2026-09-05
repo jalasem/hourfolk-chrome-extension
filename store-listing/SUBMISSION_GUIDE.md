@@ -2,7 +2,7 @@
 
 ## Before opening the dashboard
 
-1. Confirm the hosted [privacy policy](https://jalasem.github.io/hourfolk-chrome-extension/privacy-policy.html) and [terms and conditions](https://jalasem.github.io/hourfolk-chrome-extension/terms.html) open publicly.
+1. Confirm the hosted [privacy policy](https://hourfolk.abdulsamii.com/privacy-policy.html) and [terms and conditions](https://hourfolk.abdulsamii.com/terms.html) open publicly.
 2. Monitor the [GitHub issue tracker](https://github.com/jalasem/hourfolk-chrome-extension/issues) used as the support URL.
 3. Decide whether the publisher is a **Trader** or **Non-Trader**. This is a legal/business classification you must make; trader contact details are displayed publicly.
 4. Keep `release/hourfolk-0.1.0-chrome.zip` and the files in `store-listing/assets/` ready.
@@ -35,9 +35,9 @@ Copy the text from `STORE_LISTING.md`:
 - Store icon: `assets/icon-128.png`
 - Small promo tile: `assets/promo-small-440x280.png`
 - Screenshots: upload `screenshot-01-clocks.png`, `screenshot-02-plan.png`, and `screenshot-03-reminders.png` in that order
-- Privacy policy URL: `https://jalasem.github.io/hourfolk-chrome-extension/privacy-policy.html`
+- Privacy policy URL: `https://hourfolk.abdulsamii.com/privacy-policy.html`
 - Support URL: `https://github.com/jalasem/hourfolk-chrome-extension/issues`
-- Homepage URL: `https://jalasem.github.io/hourfolk-chrome-extension/`
+- Homepage URL: `https://hourfolk.abdulsamii.com/`
 
 The screenshots are 1280×800 and the small promo tile is 440×280, matching Chrome Web Store dimensions.
 
