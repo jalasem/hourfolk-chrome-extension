@@ -90,6 +90,14 @@ Cloudflare manages the `hourfolk` CNAME in the `abdulsamii.com` zone, pointing t
 `98f9ec1cb2cd8d22.vercel-dns-017.com` with proxying disabled (DNS only); Vercel manages HTTPS.
 The existing `hourfolk-chrome-extension.vercel.app` address remains available for published links.
 
+The Vercel project is not connected to GitHub, so pushing to `main` does not deploy the site. Deploy
+from the `docs` directory with the Vercel CLI (the first run links the directory to the project):
+
+```bash
+pnpm dlx vercel@latest link --yes --cwd docs --project hourfolk-chrome-extension --scope abdulsamii-ajalas-projects-f246f09e
+pnpm dlx vercel@latest deploy --prod --yes --cwd docs --scope abdulsamii-ajalas-projects-f246f09e
+```
+
 ## Architecture
 
 ```
