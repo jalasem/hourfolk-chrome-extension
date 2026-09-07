@@ -2,6 +2,8 @@
 
 **Your hours, wherever work happens.**
 
+[Add Hourfolk to Chrome](https://chromewebstore.google.com/detail/hourfolk/gmogjfhodnhpfjkphmcmgoefclceecfd) from the Chrome Web Store, or visit [hourfolk.abdulsamii.com](https://hourfolk.abdulsamii.com/).
+
 Hourfolk is a Chrome extension (Manifest V3) with a personal world clock, a time-zone planner, and
 exact-moment reminders. It runs as a toolbar popup, a Chrome side panel, or a full-page dashboard
 tab, and all three share the same domain logic and components.
@@ -74,6 +76,7 @@ It pins the local zone to `Asia/Muscat` so expectations are deterministic.
 
 ## Chrome Web Store submission
 
+Hourfolk is published at [chromewebstore.google.com/detail/hourfolk/gmogjfhodnhpfjkphmcmgoefclceecfd](https://chromewebstore.google.com/detail/hourfolk/gmogjfhodnhpfjkphmcmgoefclceecfd).
 The repository includes an upload-ready packaging command, prepared listing copy, privacy answers,
 a public [privacy policy](https://hourfolk.abdulsamii.com/privacy-policy.html),
 [terms and conditions](https://hourfolk.abdulsamii.com/terms.html), and correctly sized graphic assets. See

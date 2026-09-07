@@ -1,7 +1,7 @@
 const features = {
-  clocks: { label: 'Your world, together.', caption: 'Your local time, your saved cities, and the difference between them.', alt: 'Hourfolk world clocks', light: 'clocks-light.png', dark: 'clocks-dark.png' },
-  plan: { label: 'Make the next moment clear.', caption: 'A city, a time, and a clear answer about what it means for you.', alt: 'Hourfolk natural-language planner', light: 'plan-light.png', dark: 'plan-dark.png' },
-  reminders: { label: 'A heads-up, on your terms.', caption: 'Choose multiple early alerts. The at-time reminder stays included.', alt: 'Hourfolk reminder composer', light: 'reminders-light.png', dark: 'reminders-dark.png' },
+  clocks: { label: 'Your world, together.', caption: 'Your local time, your saved cities, and the difference between them.', alt: 'Hourfolk world clocks', light: 'clocks-light.webp', dark: 'clocks-dark.webp' },
+  plan: { label: 'Make the next moment clear.', caption: 'A city, a time, and a clear answer about what it means for you.', alt: 'Hourfolk natural-language planner', light: 'plan-light.webp', dark: 'plan-dark.webp' },
+  reminders: { label: 'A heads-up, on your terms.', caption: 'Choose multiple early alerts. The at-time reminder stays included.', alt: 'Hourfolk reminder composer', light: 'reminders-light.webp', dark: 'reminders-dark.webp' },
 };
 const tabs = [...document.querySelectorAll('[data-feature]')];
 const themeButtons = [...document.querySelectorAll('[data-theme]')];

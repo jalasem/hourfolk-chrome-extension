@@ -1,5 +1,7 @@
 # Hourfolk — Chrome Web Store listing
 
+**Published listing:** https://chromewebstore.google.com/detail/hourfolk/gmogjfhodnhpfjkphmcmgoefclceecfd
+
 ## Product details
 
 **Name:** Hourfolk
